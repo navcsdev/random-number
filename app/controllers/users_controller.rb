@@ -8,6 +8,12 @@ class UsersController < ApplicationController
   end
 
   def create
+    user = User.find_by_name(user_params[:name])
+    if user
+      render json: { data: user }
+      return
+    end
+
     user = User.new({ name: user_params[:name], score: random_integer()})
     if user.valid?
       user.save!
