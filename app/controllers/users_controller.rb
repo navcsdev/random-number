@@ -30,6 +30,6 @@ class UsersController < ApplicationController
   end
 
   def random_integer
-    SecureRandom.random_number(4611686018427387903)
+    SecureRandom.random_number(1073741823)
   end
 end
