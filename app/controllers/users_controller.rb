@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     user = User.new({ name: user_params[:name], score: random_integer()})
     if user.valid?
       user.save!
-      render json: { data: user }
+      render json: { data: user }, status: :created
     else
       render json: { errors: user.errors.messages }, status: :bad_request 
     end
