@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @pagy, @records = pagy(User.all, items: params[:items])
+    @pagy, @records = pagy(User.order('score DESC'), items: params[:items])
     render json: {
       data: @records,
       pagy: pagy_metadata(@pagy)
