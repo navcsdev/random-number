@@ -1,0 +1,15 @@
+current directory: /Users/navcs/axie-interview/random_number/vendor/cache/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
+/Users/navcs/.rbenv/versions/2.6.3/bin/ruby -I /Users/navcs/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20210925-61742-1a6scvm.rb extconf.rb
+creating Makefile
+
+current directory: /Users/navcs/axie-interview/random_number/vendor/cache/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/navcs/axie-interview/random_number/vendor/cache/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/navcs/axie-interview/random_number/vendor/cache/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20210925-61742-1ihsheb/bootsnap
